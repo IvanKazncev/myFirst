@@ -48,7 +48,7 @@ public class Tank {
     }
 
     public void goBackward(int i) {
-        x = (fuel +x) +i;
+        goForward(-i);
     }
 }
 
