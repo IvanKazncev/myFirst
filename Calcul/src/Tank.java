@@ -23,7 +23,9 @@ public class Tank {
 
 
     public void goForward(int i) {
-            i = (x + fuel) - x;
+            if (i > fuel){
+                i =fuel;
+            }
             if (dir == 0) x += i ;
           else if (dir == 1) y += i;
           else if (dir == 2) x -= i;
